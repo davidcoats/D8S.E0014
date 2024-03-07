@@ -1,13 +1,14 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace D8S.E0014
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            await Explorations.Instance.Try_Generating_AppSettingsFile();
         }
     }
 }
